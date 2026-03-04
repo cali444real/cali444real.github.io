@@ -48,14 +48,14 @@ createCollectable("diamond", 200, 170, 0.5, 0.7);
 createCollectable("grace", 1350, 350, 0.5, 0.7);
 createCollectable("database", 855, 590, 0.5, 0.7);
 
-    
+
+createCollectable("gem", 1100, 250, 0, 1, 100, 300, 2);           
     // TODO 4 - Create Cannons
 
 createCannon("top", 400, 1500);
 createCannon("top", 1250, 2000);
 createCannon("right", 550, 3000);
-    
-    
+     
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
