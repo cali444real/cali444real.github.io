@@ -96,10 +96,11 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
-  kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  gem1: { image: "images/collectables/gem1.png" },
+  gem2: { image: "images/collectables/gem2.png" },
+  gem3: { image: "images/collectables/gem3.png" },
+  gem4: { image: "images/collectables/gem4.png" },
+  gem5: { image: "images/collectables/purple gem.png" },
+  gem6: { image: "images/collectables/green gem.png" },
+  gem:  {image:"images/collectables/newplatformgem.png"}
 };

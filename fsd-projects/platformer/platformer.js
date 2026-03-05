@@ -29,33 +29,34 @@ $(function () {
     // TODO 1 - Enable the Grid
     toggleGrid();
 
-
     // TODO 2 - Create Platforms
-    
-createPlatform(200, 700, 100, 20, "red");
-createPlatform(350, 620, 100, 20, "orange");
-createPlatform(700, 630, 200, 20, "yellow");
-createPlatform(200, 500, 100, 20, "green");
-createPlatform(550, 450, 100, 20, "blue");
-createPlatform(850, 350, 75, 20, "indigo");
-createPlatform(1050, 500, 100, 20, "violet");
-createPlatform(1050, 250, 100, 20, "grey");
-createPlatform(1350, 400, 50, 50, "gold");
 
-// TODO 3 - Create Collectables
-createCollectable("kennedi", 1350, 50);
-createCollectable("diamond", 200, 170, 0.5, 0.7);
-createCollectable("grace", 1350, 350, 0.5, 0.7);
-createCollectable("database", 855, 590, 0.5, 0.7);
+    createPlatform(200, 700, 100, 20, "violet");
+    createPlatform(350, 620, 100, 20, "violet");
+    createPlatform(700, 630, 200, 20, "violet");
+    createPlatform(200, 500, 100, 20, "violet");
+    createPlatform(550, 450, 100, 20, "violet");
+    createPlatform(850, 350, 75, 20, "violet");
+    createPlatform(1050, 500, 100, 20, "violet");
+    createPlatform(1050, 250, 100, 20, "violet");
+    createPlatform(1350, 400, 50, 50, "gold");
+    createBadPlatform(700, 200, 100, 20, "violet");
+    createPlatform(400, 300, 200, 20, "blue", 100, 500, 1, 100, 400, 1);
+    // TODO 3 - Create Collectables
+    createCollectable("gem2", 1350, 50);
+    createCollectable("gem4", 200, 170, 0.5, 0.7);
+    createCollectable("gem3", 1350, 350, 0.5, 0.7);
+    createCollectable("gem1", 855, 590, 0.5, 0.7);
+    createCollectable("gem5", 200, 100);
 
+    createCollectable("gem", 1100, 275, 0, 1, 1000, 1300, 5);
 
-createCollectable("gem", 1100, 250, 0, 1, 100, 300, 2);           
     // TODO 4 - Create Cannons
 
-createCannon("top", 400, 1500);
-createCannon("top", 1250, 2000);
-createCannon("right", 550, 3000);
-     
+    createCannon("top", 400, 1500);
+    createCannon("top", 1250, 2000);
+    createCannon("right", 550, 3000);
+    createProjectile("left", 100, 1000, 10, 5);
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////

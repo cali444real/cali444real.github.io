@@ -3,8 +3,9 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
+  background-image: url("https://i.pinimg.com/736x/07/da/bc/07dabcd4b12fde398e0e93da0d97ce0f.jpg");
   margin: 20px;
+  background-size: cover;
 }
 
 img {
