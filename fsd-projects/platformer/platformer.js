@@ -4,6 +4,7 @@ $(function () {
   ctx = canvas.getContext("2d");
   window.addEventListener("load", loadJson);
 
+
   function setup() {
     if (firstTimeSetup) {
       halleImage = document.getElementById("player");
@@ -16,20 +17,25 @@ $(function () {
       setInterval(main, 1000 / frameRate);
     }
 
+
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "navy"); // bottom wall
     createPlatform(-50, -50, 50, canvas.height + 500); // left wall
     createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
 
+
     //////////////////////////////////
     // ONLY CHANGE BELOW THIS POINT //
     //////////////////////////////////
 
+
     // TODO 1 - Enable the Grid
     //toggleGrid();
 
+
     // TODO 2 - Create Platforms
+
 
     createPlatform(200, 700, 100, 20, "violet");
     createPlatform(350, 620, 100, 20, "violet");
@@ -49,9 +55,12 @@ $(function () {
     createCollectable("gem1", 855, 590, 0.5, 0.7);
     createCollectable("gem5", 200, 100);
 
+
     createCollectable("gem", 1100, 275, 0, 1, 1000, 1300, 5);
 
+
     // TODO 4 - Create Cannons
+
 
     createCannon("top", 400, 1500);
     createCannon("top", 1250, 2000);
@@ -62,5 +71,7 @@ $(function () {
     //////////////////////////////////
   }
 
+
   registerSetup(setup);
 });
+

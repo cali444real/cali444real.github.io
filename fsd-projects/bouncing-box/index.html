@@ -6,8 +6,8 @@
     <script src="jquery.min.js"></script>
     <style>
       .box {
-        width: 70px;
-        height: 70px;
+        width: 200px;
+        height: 200px;
         background-color: teal;
         font-size: 300%;
         text-align: center;
@@ -28,7 +28,7 @@
 
   <body class="board">
     <!-- HTML for the box -->
-    <div class="box">0</div>
+    <div class="box">points</div>
 
     <script>
       (function () {
@@ -71,7 +71,7 @@
         // TODO 2 - Variable declarations
         var positionX = 0;
         var points = 0;
-        var speed = 10
+        var speed = 10;
         /**
          * This Function will be called 20 times/second.
          * Each time it is called, it should move the Box to a new location.
@@ -82,7 +82,8 @@
           positionX = positionX + speed;
           if (positionX >= boardWidth) {
             speed *= -1;
-          } if (positionX <= 0) {
+          }
+          if (positionX <= 0) {
             speed *= -1;
           }
         }
@@ -96,9 +97,9 @@
          */
         function handleBoxClick() {
           positionX = 0;
-          speed = 3 * points + 10;
-          points++;
           changeBoxText(points);
+          points++;
+          speed = 3 * points + 10;
         }
       })();
     </script>
